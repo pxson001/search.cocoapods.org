@@ -23,3 +23,10 @@ desc "Run all specs"
 task :spec => 'spec:all'
 
 task :default => :spec
+
+begin
+  desc "Starts processes for local development"
+  task :serve do
+    exec "env PORT=7777 RACK_ENV=development foreman start"
+  end
+end

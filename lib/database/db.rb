@@ -5,6 +5,7 @@ ENV['DATABASE_URL'] ||=
 #
 #
 uri = DataObjects::URI.parse(ENV['DATABASE_URL'])
+
 options = {}
 [:host, :port, :user, :password].each do |key|
   val = uri.send(key)

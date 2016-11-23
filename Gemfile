@@ -14,7 +14,7 @@ gem 'picky', '~> 4.31.0'
 gem 'picky-client', '~> 4.31.0' # Needed for Picky::Convenience
 gem 'cod'
 gem 'hashie'
-gem 'google_hash'
+gem 'google_hash', '~> 0.8.9'
 
 # Auxiliary gems to make Picky faster/better.
 #

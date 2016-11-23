@@ -4,6 +4,8 @@ require File.expand_path '../lib/cocoapods.org', __FILE__
 #
 Picky.root = 'tmp'
 
+ENV['HOOK_PATH'] ||= 'jmango360'
+
 # The Sinatra search server.
 #
 # Mainly offers two things:
